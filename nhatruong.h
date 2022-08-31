@@ -1,3 +1,5 @@
+#ifndef nhatruong_h
+#define nhatruong_h
 #include "giaovien.h"
 void menu();
 int countLine(string Data_);
@@ -14,9 +16,6 @@ public:
     void deleteInfo();
     void deleteAll();
 };
-
-/*#ifndef nhatruong_h
-#define nhatruong_h
 #endif*/
 
 
