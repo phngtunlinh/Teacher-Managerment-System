@@ -29,7 +29,12 @@ void menu() {
 }
 int countLine(string Data_)
 {
-    ifstream Outfile;
+    fstream Outfile;
+    if (!Outfile)
+    {
+        Outfile.open(Data_, fstream::in | fstream::out | fstream::trunc);
+        Outfile.close();
+    }
     Outfile.open(Data_);
     int countL = 0;
     char c; Outfile.get(c);
